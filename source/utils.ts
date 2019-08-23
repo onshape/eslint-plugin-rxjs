@@ -74,3 +74,7 @@ export function isCallExpression(node: es.Node): node is es.CallExpression {
 export function isMemberExpression(node: es.Node): node is es.MemberExpression {
   return node.type === "MemberExpression";
 }
+
+export function isIdentifier(node: es.Node): node is es.Identifier {
+  return node.type === "Identifier";
+}
